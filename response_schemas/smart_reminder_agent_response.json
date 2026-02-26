@@ -1,0 +1,40 @@
+{
+  "agent_name": "Smart Reminder Agent",
+  "agent_id": "69a0921d5fbdce87bf6e73e9",
+  "description": "Evaluates task deadlines and user activity patterns to generate context-aware, adaptive reminders at optimal times; delivers reminders as in-app notifications.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "reminders": [
+        {
+          "task_name": "string",
+          "priority": "string",
+          "deadline": "string",
+          "reminder_message": "string",
+          "urgency_reason": "string",
+          "suggested_action": "string"
+        }
+      ],
+      "summary": "string",
+      "next_check_recommendation": "string"
+    }
+  },
+  "example_response": {
+    "result": {
+      "reminders": [
+        {
+          "task_name": "Name of the task",
+          "priority": "Priority level: urgent, high, medium, or low",
+          "deadline": "Task deadline",
+          "reminder_message": "The notification text shown to the user",
+          "urgency_reason": "Why this reminder is being triggered now",
+          "suggested_action": "What the user should do next"
+        }
+      ],
+      "summary": "Brief overview of the reminder batch",
+      "next_check_recommendation": "When the next check should happen"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "agents": [
+    {
+      "name": "Task Intelligence Agent",
+      "agent_id": "69a0921c849533a5e9977933",
+      "type": "independent",
+      "trigger": "user_interaction"
+    },
+    {
+      "name": "Smart Reminder Agent",
+      "agent_id": "69a0921d5fbdce87bf6e73e9",
+      "type": "independent",
+      "trigger": "scheduled",
+      "schedule": {
+        "cron": "0 */2 * * *",
+        "timezone": "UTC"
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "agent_name": "Task Intelligence Agent",
+  "agent_id": "69a0921c849533a5e9977933",
+  "description": "Analyzes tasks provided by the user \u2014 suggests priority levels, estimates time, breaks complex tasks into subtasks, provides workload balancing advice, and delivers productivity insights through conversational interaction.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "result": {
+      "analysis_type": "string",
+      "message": "string",
+      "tasks": [
+        {
+          "task_name": "string",
+          "priority": "string",
+          "estimated_time": "string",
+          "subtasks": [
+            "string"
+          ],
+          "notes": "string"
+        }
+      ],
+      "productivity_tips": [
+        "string"
+      ],
+      "workload_summary": {
+        "total_tasks": "number",
+        "urgent_count": "number",
+        "high_count": "number",
+        "medium_count": "number",
+        "low_count": "number",
+        "estimated_total_time": "string",
+        "balance_status": "string"
+      }
+    }
+  },
+  "example_response": {
+    "result": {
+      "analysis_type": "Type of analysis: task_analysis, priority_suggestion, subtask_breakdown, workload_review, productivity_insight, or general",
+      "message": "The main response message in plain text",
+      "tasks": [
+        {
+          "task_name": "Name of the task",
+          "priority": "Priority level: urgent, high, medium, or low",
+          "estimated_time": "Estimated completion time",
+          "subtasks": [
+            "sample string"
+          ],
+          "notes": "Additional notes about the task"
+        }
+      ],
+      "productivity_tips": [
+        "sample string"
+      ],
+      "workload_summary": {
+        "total_tasks": 0,
+        "urgent_count": 0,
+        "high_count": 0,
+        "medium_count": 0,
+        "low_count": 0,
+        "estimated_total_time": "Total estimated time for all tasks",
+        "balance_status": "Workload balance: overloaded, balanced, or light"
+      }
+    }
+  }
+}
